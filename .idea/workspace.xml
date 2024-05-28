@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c94fd2e7-4dd7-4b8c-9201-3234cf4ca238" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/Ventana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBienvenida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaTabla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/borrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/DBConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/principal/Principal.java" afterDir="false" />
+    <list default="true" id="c94fd2e7-4dd7-4b8c-9201-3234cf4ca238" name="Changes" comment="Creacion de packages y clases principales">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EleccionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Candidato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Cargo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Eleccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Votante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Voto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/CandidatoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/EleccionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/VotacionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/VotanteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBienvenida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/borrar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +28,38 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NichoUlloa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NichoUlloa/EleccionesTransparentes.git",
+    "accountId": "ad657d07-59ed-4433-8124-f604de13a408"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2h6i95MvU58Q2GqHsxwfS2r1OR6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +68,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,6 +79,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="VentanaBienvenida" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.VentanaBienvenida" />
+      <module name="Taller2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VentanaBienvenida" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -75,12 +115,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716920789782</updated>
-      <workItem from="1716920790887" duration="303000" />
+      <workItem from="1716920790887" duration="3308000" />
     </task>
+    <task id="LOCAL-00001" summary="primer Commit README.md">
+      <option name="closed" value="true" />
+      <created>1716921406432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716921406432</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Creacion de packages y clases principales">
+      <option name="closed" value="true" />
+      <created>1716921445461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716921445461</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primer Commit README.md" />
+    <MESSAGE value="Creacion de packages y clases principales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de packages y clases principales" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
