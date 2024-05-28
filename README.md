@@ -32,6 +32,10 @@ EleccionDAO: Clase de acceso a datos para elecciones.
 VotacionDAO: Clase de acceso a datos para votaciones.
 VotanteDAO: Clase de acceso a datos para votantes.
 
+### Consultas Chat Gpt
+* como podria hacer para validar los datos de los registros atraves de try catch
+* como podria hacer para que los datos de la tabla se muestren en la ventana de resultados
+
 ### Diagrama de Clases UML
 El diagrama de clases UML del proyecto se muestra a continuación:
 
