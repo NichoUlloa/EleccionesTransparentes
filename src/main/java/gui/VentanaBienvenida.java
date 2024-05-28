@@ -72,7 +72,7 @@ public class VentanaBienvenida extends Ventana{
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == crearEleccion) {
-            VentanaCrearEleccion ventanaCrearEleccion = new VentanaCrearEleccion();
+            VentanaRegistrarEleccion ventanaCrearEleccion = new VentanaRegistrarEleccion();
         } else if (e.getSource() == registrarCandidato) {
             VentanaRegistrarCandidato ventanaRegistrarCandidato = new VentanaRegistrarCandidato();
         } else if (e.getSource() == registrarVotante) {

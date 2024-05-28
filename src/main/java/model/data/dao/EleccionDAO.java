@@ -16,12 +16,13 @@ public class EleccionDAO {
 
     //metodo para crear o registrar una eleccion nombreEleccion, fechaEleccion, direccionEleccion, candidatos
     public static void registrarEleccion(DSLContext query, Eleccion eleccion){
-        Table tablaEleccion= table(name("eleccion"));
-        Field[] columnas = tablaEleccion.fields("nombreEleccion", "fechaEleccion","direccionEleccion");
-        query.insertInto(tablaEleccion, columnas[0], columnas[1],columnas[2])
-                .values(eleccion.getNombreEleccion(), eleccion.getFechaEleccion(),eleccion.getDireccionEleccion())
+        Table tablaEleccion = table(name("eleccion"));
+        Field[] columnas = tablaEleccion.fields("nombreEleccion", "fechaEleccion", "direccionEleccion", "estado");
+        query.insertInto(tablaEleccion, columnas[0], columnas[1], columnas[2], columnas[3])
+                .values(eleccion.getNombreEleccion(), eleccion.getFechaEleccion(), eleccion.getDireccionEleccion(), "activo")
                 .execute();
     }
+
 
     // metodo para validar si una eleccion ya existe en la base de datos
     public static boolean validarExistenciaEleccion(DSLContext query,String columnaTabla, Object dato){

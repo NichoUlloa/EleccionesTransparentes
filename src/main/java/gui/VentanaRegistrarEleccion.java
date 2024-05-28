@@ -5,9 +5,9 @@ import controller.EleccionController;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-public class VentanaCrearEleccion extends Ventana {
+public class VentanaRegistrarEleccion extends Ventana {
     public static void main(String[] args) {
-        VentanaCrearEleccion ventanaCrearEleccion = new VentanaCrearEleccion();
+        VentanaRegistrarEleccion ventanaCrearEleccion = new VentanaRegistrarEleccion();
     }
 
     // componente de la ventana nombreEleccion, fechaEleccion, direccionEleccion, candidatos
@@ -15,7 +15,7 @@ public class VentanaCrearEleccion extends Ventana {
     private JTextField campoNombreEleccion, campoFechaEleccion, campoDireccionEleccion;
     private JButton botonCrearEleccion, botonCancelar;
 
-    public VentanaCrearEleccion() {
+    public VentanaRegistrarEleccion() {
         super("Crear Elección", 500, 520);
         generarElementosVentana();
     }
@@ -69,68 +69,65 @@ public class VentanaCrearEleccion extends Ventana {
         this.add(campoDireccionEleccion);
     }
 
-   private boolean registrarEleccion() throws ClassNotFoundException {
-        if(this.campoNombreEleccion.getText().length()==0 || this.campoFechaEleccion.getText().length()==0 || this.campoDireccionEleccion.getText().length()==0){
+    private boolean registrarEleccion() throws ClassNotFoundException {
+        if (campoNombreEleccion.getText().isEmpty() || campoFechaEleccion.getText().isEmpty() || campoDireccionEleccion.getText().isEmpty()) {
             return false;
-        }
-        else{
-            return EleccionController.registrarEleccion(this.campoNombreEleccion.getText(),this.campoFechaEleccion.getText(),this.campoDireccionEleccion.getText());
+        } else {
+            return EleccionController.registrarEleccion(campoNombreEleccion.getText(), campoFechaEleccion.getText(), campoDireccionEleccion.getText());
         }
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.botonCrearEleccion) {
             try {
-                if(registrarEleccion()) {
-                    JOptionPane.showMessageDialog(this,"Eleccion registrada correctamente");
+                if (registrarEleccion()) {
+                    JOptionPane.showMessageDialog(this, "Eleccion registrada correctamente");
                     VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
                     this.dispose();
-                }
-                else{
-                    JOptionPane.showMessageDialog(this,"Eleccion ya ingresada o datos incorrectos");
+                } else {
+                    JOptionPane.showMessageDialog(this, "Eleccion ya ingresada o datos incorrectos");
                 }
             } catch (ClassNotFoundException ex) {
                 ex.printStackTrace();
             }
         }
-        if (e.getSource() == this.botonCancelar){
+        if (e.getSource() == this.botonCancelar) {
             VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
             this.dispose();
         }
-
     }
+
+
+
 }
 
-// ejemplo override
-//  public void actionPerformed(ActionEvent e) {
+// ejemeplo metodo registrar y override
+//   private boolean registrarCandidato() throws ClassNotFoundException {
+//        if (campoRut.getText().isEmpty() || campoNombreCompleto.getText().isEmpty() || campoPartidoPolitico.getText().isEmpty()) {
+//            return false;
+//        } else {
+//            return EleccionController.registrarCandidato(campoRut.getText(), campoNombreCompleto.getText(), campoPartidoPolitico.getText(), (Cargo) campoCargoQueAspira.getSelectedItem());
+//        }
+//    }
+//
+//    @Override
+//    public void actionPerformed(ActionEvent e) {
 //        if (e.getSource() == this.botonRegistrar) {
 //            try {
-//                if(registrarCarrera()) {
-//                    JOptionPane.showMessageDialog(this,"Carrera registrada correctamente");
+//                if (registrarCandidato()) {
+//                    JOptionPane.showMessageDialog(this, "Candidato registrado correctamente");
 //                    VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
 //                    this.dispose();
-//                }
-//                else{
-//                    JOptionPane.showMessageDialog(this,"Carrera ya ingresada o datos incorrectos");
+//                } else {
+//                    JOptionPane.showMessageDialog(this, "Candidato ya ingresado o datos incorrectos");
 //                }
 //            } catch (ClassNotFoundException ex) {
 //                ex.printStackTrace();
 //            }
 //        }
-//        if (e.getSource() == this.botonCancelar){
+//        if (e.getSource() == this.botonCancelar) {
 //            VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
 //            this.dispose();
-//        }
-//
-//    }
-
-// ejemplo registrar
-// private boolean registrarCarrera() throws ClassNotFoundException {
-//        if(this.campoCodigoCarrera.getText().length()==0 || this.campoNombre.getText().length()==0 || this.campoSemestres.getText().length()==0){
-//            return false;
-//        }
-//        else{
-//            return CarreraController.añadirCarrera(this.campoNombre.getText(),this.campoCodigoCarrera.getText(),Integer.parseInt(this.campoSemestres.getText()));
-//
 //        }
 //    }

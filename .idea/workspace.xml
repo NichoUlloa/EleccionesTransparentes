@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c94fd2e7-4dd7-4b8c-9201-3234cf4ca238" name="Changes" comment="creacion de clases Data y DAO y gui">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaCrearEleccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaRegistrarCandidato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaRegistrarVotante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaResultados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaVotar.java" afterDir="false" />
+    <list default="true" id="c94fd2e7-4dd7-4b8c-9201-3234cf4ca238" name="Changes" comment="actualizacion clase controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EleccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EleccionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBienvenida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaCrearEleccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaRegistrarEleccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaVotar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaVotar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Candidato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Eleccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Eleccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/EleccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/EleccionDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VentanaCrearEleccion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.VentanaCrearEleccion" />
+    <configuration name="VentanaRegistrarCandidato" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.VentanaRegistrarCandidato" />
       <module name="Taller2" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VentanaRegistrarCandidato" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.VentanaRegistrarCandidato" />
+    <configuration name="VentanaRegistrarEleccion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.VentanaRegistrarEleccion" />
       <module name="Taller2" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +151,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Principal" />
-        <item itemvalue="Application.VentanaCrearEleccion" />
+        <item itemvalue="Application.VentanaRegistrarEleccion" />
         <item itemvalue="Application.VentanaRegistrarVotante" />
         <item itemvalue="Application.VentanaRegistrarCandidato" />
         <item itemvalue="Application.VentanaBienvenida" />
@@ -176,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716920789782</updated>
-      <workItem from="1716920790887" duration="5009000" />
+      <workItem from="1716920790887" duration="6001000" />
     </task>
     <task id="LOCAL-00001" summary="primer Commit README.md">
       <option name="closed" value="true" />
@@ -202,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716924417410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="actualizacion clase controller">
+      <option name="closed" value="true" />
+      <created>1716926173445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716926173445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +218,8 @@
     <MESSAGE value="primer Commit README.md" />
     <MESSAGE value="Creacion de packages y clases principales" />
     <MESSAGE value="creacion de clases Data y DAO y gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de clases Data y DAO y gui" />
+    <MESSAGE value="actualizacion clase controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion clase controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

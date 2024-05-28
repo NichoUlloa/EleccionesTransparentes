@@ -16,6 +16,10 @@ public class Candidato {
         this.cargoQueAspira = cargoQueAspira;
     }
 
+    public static Object[] values() {
+        return new Object[0];
+    }
+
     // Getters
     public String getRut() {
         return rut;
