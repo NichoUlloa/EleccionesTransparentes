@@ -118,38 +118,3 @@ public class VentanaRegistrarVotante extends Ventana{
 
     }
 }
-
-// ejemplo override
-//  public void actionPerformed(ActionEvent e) {
-//        if (e.getSource() == this.botonRegistrar) {
-//            try {
-//                if(registrarCarrera()) {
-//                    JOptionPane.showMessageDialog(this,"Carrera registrada correctamente");
-//                    VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
-//                    this.dispose();
-//                }
-//                else{
-//                    JOptionPane.showMessageDialog(this,"Carrera ya ingresada o datos incorrectos");
-//                }
-//            } catch (ClassNotFoundException ex) {
-//                ex.printStackTrace();
-//            }
-//        }
-//        if (e.getSource() == this.botonCancelar){
-//            VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
-//            this.dispose();
-//        }
-//
-//    }
-
-// ejemplo registrar
-// private boolean registrarCarrera() throws ClassNotFoundException {
-//        if(this.campoCodigoCarrera.getText().length()==0 || this.campoNombre.getText().length()==0 || this.campoSemestres.getText().length()==0){
-//            return false;
-//        }
-//        else{
-//            return CarreraController.añadirCarrera(this.campoNombre.getText(),this.campoCodigoCarrera.getText(),Integer.parseInt(this.campoSemestres.getText()));
-//
-//        }
-//    }
-

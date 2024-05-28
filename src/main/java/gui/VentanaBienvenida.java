@@ -89,26 +89,3 @@ public class VentanaBienvenida extends Ventana{
 
 
 }
-// ejemplo override
-// // Override del método actionPerformed
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        if (e.getSource() == mostrarProductos) {
-//            try {
-//                String[][] datosProductos = ProductoController.mostrarTodosLosProductos();
-//                VentanaTabla ventanaTabla = new VentanaTabla(datosProductos, new String[]{"ID", "Nombre", "Marca", "Categoría", "Precio"});
-//            } catch (ClassNotFoundException ex) {
-//                ex.printStackTrace();
-//            }
-//        } else if (e.getSource() == registrarProducto) {
-//            VentanaRegistrarProducto ventanaRegistrarProducto = new VentanaRegistrarProducto();
-//        } else if (e.getSource() == eliminarProducto) {
-//            VentanaEliminarProducto ventanaEliminarProducto = new VentanaEliminarProducto();
-//        } else if (e.getSource() == modificarProducto) {
-//            VentanaModificarProducto ventanaModificarProducto = new VentanaModificarProducto();
-//        } else if (e.getSource() == buscarProducto) {
-//            VentanaBuscarProducto ventanaBuscarProducto = new VentanaBuscarProducto();
-//        } else if (e.getSource() == salir) {
-//            System.exit(0);
-//        }
-//    }

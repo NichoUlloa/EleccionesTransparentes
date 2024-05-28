@@ -1,8 +1,12 @@
 package gui;
 
 import model.Candidato;
+import model.data.DBGenerator;
+import model.data.dao.CandidatoDAO;
+import org.jooq.DSLContext;
 
 import javax.swing.*;
+import java.util.List;
 
 public class VentanaVotar extends Ventana{
     public static void main(String[] args) {
@@ -25,7 +29,6 @@ public class VentanaVotar extends Ventana{
         generarMensajeMenu();
         generarBotonConfirmarVoto();
         generarBotonCancelar();
-        generarCampoCandidato();
         generarCampoFecha();
     }
 
@@ -48,12 +51,6 @@ public class VentanaVotar extends Ventana{
         this.add(botonCancelar);
     }
 
-    private void generarCampoCandidato() {
-        String textoCandidato = "Candidato:";
-        super.generarJLabel(this.textoCandidato, textoCandidato, 20, 50, 150, 20);
-        campoCandidato = super.generarListaDesplegable(Candidato.values(), 200, 50, 250, 20);
-        this.add(campoCandidato);
-    }
 
     private void generarCampoFecha() {
         String textoFecha = "Fecha:";
@@ -61,11 +58,4 @@ public class VentanaVotar extends Ventana{
         campoFecha = super.generarJTextField(200, 100, 250, 20);
         this.add(campoFecha);
     }
-
-
-
-
-
-
-
 }

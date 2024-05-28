@@ -60,20 +60,4 @@ public class EleccionController {
             return false;
         }
     }
-
-
 }
-
-// ejemplo metodo registrarElecciones
-// public static boolean registrarProducto(int id, String nombre, Marca marca, Categoria categoria, double precio) throws ClassNotFoundException {
-//        DSLContext query = DBGenerator.conectarBD(nombreDataBase);
-//        if (!ProductoDAO.validarExistenciaProducto(query, "ID", id)) {
-//            Producto producto = new Producto(id, nombre, marca, categoria, precio);
-//            ProductoDAO.registrarProducto(query, producto);
-//            DBConnector.closeConnection();
-//            return true;
-//        } else {
-//            DBConnector.closeConnection();
-//            return false;
-//        }
-//    }

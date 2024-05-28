@@ -93,41 +93,7 @@ public class VentanaRegistrarEleccion extends Ventana {
             }
         }
         if (e.getSource() == this.botonCancelar) {
-            VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
             this.dispose();
         }
     }
-
-
-
 }
-
-// ejemeplo metodo registrar y override
-//   private boolean registrarCandidato() throws ClassNotFoundException {
-//        if (campoRut.getText().isEmpty() || campoNombreCompleto.getText().isEmpty() || campoPartidoPolitico.getText().isEmpty()) {
-//            return false;
-//        } else {
-//            return EleccionController.registrarCandidato(campoRut.getText(), campoNombreCompleto.getText(), campoPartidoPolitico.getText(), (Cargo) campoCargoQueAspira.getSelectedItem());
-//        }
-//    }
-//
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        if (e.getSource() == this.botonRegistrar) {
-//            try {
-//                if (registrarCandidato()) {
-//                    JOptionPane.showMessageDialog(this, "Candidato registrado correctamente");
-//                    VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
-//                    this.dispose();
-//                } else {
-//                    JOptionPane.showMessageDialog(this, "Candidato ya ingresado o datos incorrectos");
-//                }
-//            } catch (ClassNotFoundException ex) {
-//                ex.printStackTrace();
-//            }
-//        }
-//        if (e.getSource() == this.botonCancelar) {
-//            VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
-//            this.dispose();
-//        }
-//    }
