@@ -17,11 +17,11 @@ public class EleccionController {
 
     private static final String nombreDataBase = "EleccionesTransparentesDB";
 
-    // metodo registrarElecciones nombreEleccion, fechaEleccion, direccionEleccion, candidatos
-    public static boolean registrarEleccion(String nombreEleccion, String fechaEleccion, String direccionEleccion, ArrayList<Candidato> candidatos) throws ClassNotFoundException {
+    // metodo registrarElecciones nombreEleccion, fechaEleccion, direccionEleccion
+    public static boolean registrarEleccion(String nombreEleccion, String fechaEleccion, String direccionEleccion) throws ClassNotFoundException {
         DSLContext query = DBGenerator.conectarBD(nombreDataBase);
         if (!EleccionDAO.validarExistenciaEleccion(query, "nombreEleccion", nombreEleccion)) {
-            Eleccion eleccion = new Eleccion(nombreEleccion, fechaEleccion, direccionEleccion, candidatos);
+            Eleccion eleccion = new Eleccion(nombreEleccion, fechaEleccion, direccionEleccion);
             EleccionDAO.registrarEleccion(query, eleccion);
             DBConnector.closeConnection();
             return true;
@@ -30,6 +30,7 @@ public class EleccionController {
             return false;
         }
     }
+
 
 
     // metodo registroCandidato CandidatoDAO rut, nombreCompleto, partidoPolitico, cargoQueAspira

@@ -6,7 +6,7 @@ import model.data.DBGenerator;
 public class Principal {
     public static void main(String[] args) throws ClassNotFoundException {
 
-        String nombreDataBase = "";
+        String nombreDataBase = "EleccionesTransparentesDB";
         DBGenerator.iniciarBD(nombreDataBase);
         VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
     }

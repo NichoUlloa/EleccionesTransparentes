@@ -11,11 +11,10 @@ public class Eleccion {
     private ArrayList<Candidato> candidatos;
 
     // Constructor
-    public Eleccion(String nombreEleccion, String fechaEleccion, String direccionEleccion, ArrayList<Candidato> candidatos) {
+    public Eleccion(String nombreEleccion, String fechaEleccion, String direccionEleccion) {
         this.nombreEleccion = nombreEleccion;
         this.fechaEleccion = fechaEleccion;
         this.direccionEleccion = direccionEleccion;
-        this.candidatos = candidatos;
     }
 
     // Getters

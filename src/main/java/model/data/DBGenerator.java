@@ -66,13 +66,12 @@ public class DBGenerator {
                 .execute();
     }
 
-    // metodo estandar para crear una tabla Eleccion nombreEleccion, fechaEleccion, direccionEleccion, candidatos
+    // metodo estandar para crear una tabla Eleccion nombreEleccion, fechaEleccion, direccionEleccion,
     private static void crearTablaEleccion(DSLContext create) {
         create.createTableIfNotExists("Eleccion")
                 .column("nombreEleccion", VARCHAR(100))
                 .column("fechaEleccion", VARCHAR(50))
                 .column("direccionEleccion", VARCHAR(100))
-                .column("candidatos", VARCHAR(100))
                 .constraint(primaryKey("nombreEleccion"))
                 .execute();
     }
